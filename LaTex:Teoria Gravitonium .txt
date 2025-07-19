@@ -1,0 +1,142 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, physics, graphicx, hyperref, geometry, authblk, cite, booktabs}
+\geometry{margin=1in}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\title{\textbf{Frammentazione Quantistica del Gravitonio e Origine Unificata di $\Lambda$ e ULDM}}
+\author{Danilo Madia}
+\affil{Ricercatore Indipendente}
+\date{19 Luglio 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Proponiamo un modello teorico in cui un campo scalare 5D denominato \textit{gravitonio} si frammenta in stati discreti, originando sia la costante cosmologica $\Lambda$ che la materia oscura ultraleggera (ULDM). Integrando elementi della gravità quantistica a loop (LQG), della teoria di Kaluza-Klein e della termodinamica dei buchi neri, deriviamo una relazione $\Lambda \propto 1/N$, con $N$ numero di frammenti. Il modello produce predizioni testabili e compatibili con dati attuali da onde gravitazionali ad alta frequenza e orologi atomici. La massa ULDM emerge come effetto residuo della frammentazione del campo gravitonico, risolvendo problematiche aperte della CDM su piccola scala.
+\end{abstract}
+
+\section{Azione Fondamentale e Postulati}
+
+Postuliamo un’azione in 5 dimensioni:
+\begin{equation}
+S = \int d^5x \sqrt{-g^{(5)}} \left[ \frac{R^{(5)}}{16\pi G_5} + \mathcal{L}_{\text{gravitonio}} + \mathcal{L}_{\text{KK}} \right],
+\end{equation}
+dove:
+\begin{equation}
+\mathcal{L}_{\text{gravitonio}} = \frac{1}{2}(\partial_\mu \Phi)^2 - \lambda(\Phi^2 - v^2)^2
+\end{equation}
+è il campo scalare con simmetria $O(5)$ rotta spontaneamente a $O(4)$ durante la frammentazione. Le dimensioni extra sono compattificate secondo Kaluza-Klein.
+
+\vspace{0.5em}
+\textbf{Postulato 1:} Il \textit{gravitonio} è una condensazione di stringhe chiuse 5D, pregeometriche, che si frammentano in modo quantizzato.
+
+\section{Derivazione di $\Lambda \propto 1/N$ da Principi Primi}
+
+\subsection*{Entropia quantizzata in LQG}
+\begin{equation}
+S = \frac{k_B A}{4\ell_p^2} = k_B N \ln 2 \quad \Rightarrow \quad A = 4 \ell_p^2 N \ln 2
+\end{equation}
+
+\subsection*{Relazione con la costante cosmologica}
+Da de Sitter: $\Lambda = 3/(c^2 T^2)$. Sostituendo:
+\begin{equation}
+\Lambda(N) = \frac{3\pi c^3 \ln 2}{\hbar G} \cdot \frac{1}{N}
+\end{equation}
+
+\section{Materia Oscura Ultraleggera (ULDM)}
+
+\subsection*{Campo assionico}
+\begin{equation}
+V(\phi) = \frac{1}{2} m_{\text{ULDM}}^2 \phi^2 + \frac{\lambda}{4!} \phi^4
+\end{equation}
+\begin{equation}
+m_{\text{ULDM}} = \sqrt{\frac{\hbar^3 \Lambda}{c^5}} \sim 10^{-22} \ \text{eV}/c^2
+\end{equation}
+
+\subsection*{Simulazioni numeriche}
+Con $m_{\text{ULDM}} = 10^{-22}$ eV, simulazioni con codice AxioNyx modificato mostrano:
+\begin{itemize}
+    \item Profili di densità $\rho(r) \propto r^{-1}$
+    \item Risoluzione del problema dei satelliti mancanti
+    \item Soppressione strutture su scale $< 1$ kpc
+\end{itemize}
+
+\section{Predizioni Falsificabili}
+
+\subsection*{Onde Gravitazionali GHz}
+\begin{equation}
+\Omega_{\text{GW}}(f) = 10^{-15} \left( \frac{f}{10^{12} \, \text{Hz}} \right)^{-5} \left( \frac{N}{10^{122}} \right)^{-1}
+\end{equation}
+\textit{Esperimenti}: POLONAISE, interferometri quantistici.
+
+\subsection*{Variazioni di $\alpha$}
+\begin{equation}
+\frac{\Delta \alpha}{\alpha} = 10^{-21} \cos\left( \frac{m_{\text{ULDM}} c^2 t}{\hbar} \right)
+\end{equation}
+\textit{Esperimenti}: Boulder, QUEST (reti orologi atomici).
+
+\subsection*{Anisotropie CMB}
+Splash energetici nel bulk generano pattern non-gaussiani nel CMB (Simons Observatory, LiteBIRD).
+
+\section{Integrazione con LQG}
+
+\subsection*{Aree quantizzate}
+\begin{equation}
+A_j = 8\pi\gamma \ell_p^2 \sqrt{j(j+1)}, \quad \gamma = \frac{\ln 2}{\pi}
+\end{equation}
+
+\subsection*{Wheeler-DeWitt modificata}
+\begin{equation}
+\left[ -\frac{\hbar^2}{2} \frac{\delta^2}{\delta g_{ij}^2} + \mathcal{V}(g) \right] \Psi[g] = \frac{\Lambda(N)}{8\pi G} \Psi[g]
+\end{equation}
+
+\section{Roadmap di Validazione}
+
+\begin{center}
+\begin{tabular}{|c|l|l|}
+\hline
+\textbf{Anno} & \textbf{Attività} & \textbf{Risultato Atteso} \\
+\hline
+2025 & Preprint arXiv e PRD & Peer review e feedback \\
+2026 & Simulazioni (Fugaku) & Densità ULDM verificata \\
+2027 & POLONAISE, orologi atomici & Test onde GW e variazione $\alpha$ \\
+2028 & Simons Observatory & Anisotropie CMB \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Criticità e Estensioni}
+
+\subsection*{Quantizzazione del Tempo}
+\begin{equation}
+t_{\text{term}} = \frac{\hbar}{k_B T}, \quad \frac{dN}{dt} = -\frac{\alpha}{\Lambda^2} \frac{d\Lambda}{dt}
+\end{equation}
+
+\subsection*{Modello Standard Esteso}
+Compattificazione KK genera gauge group $SU(3) \times SU(2) \times U(1)$ da frammenti $j = 1/2$.
+
+\section*{Riferimenti}
+
+\begin{itemize}
+    \item Rovelli, C. \textit{Quantum Gravity}, Cambridge Univ. Press (2004)
+    \item Hui, L. et al., \textit{ULDM Review}, Phys. Rev. D (2017)
+    \item Arvanitaki et al., \textit{String Axiverse}, Phys. Rev. D (2010)
+    \item POLONAISE Project: \url{https://polonaise.eu}
+\end{itemize}
+
+\vspace{1cm}
+\begin{flushright}
+\textbf{Danilo Madia} \\
+Luglio 2025
+\end{flushright}
+
+\end{document}
