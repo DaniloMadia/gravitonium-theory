@@ -6,6 +6,13 @@ come origine unificata della costante cosmologica (Λ) e della Materia Oscura Ul
 
 ---
 
+## 📄 Citazione ufficiale e DOI
+
+Questa teoria è stata pubblicata con DOI su Zenodo:
+
+**📘 DOI:** [10.5281/zenodo.16178217](https://doi.org/10.5281/zenodo.16178217)  
+**🔗 Link diretto alla pubblicazione:** https://zenodo.org/records/16178217  
+
 ### 📂 Contenuti
 
 - `main.tex` – codice sorgente LaTeX completo
